@@ -9,9 +9,9 @@ import android.widget.RadioButton;
 
 public class ColorPicker extends AppCompatActivity {
     public static final String Bundle_Key_Color_Int = "com.opro.ken.color.colorInt";
-   // public static final String Bundle_Key_Color_Name = "com.opro.ken.color.colorName";
+    public static final String Bundle_Key_Color_Name = "com.opro.ken.color.colorName";
     private int mColorInt;
-   // private CharSequence mColorName;
+    private CharSequence mColorName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +23,19 @@ public class ColorPicker extends AppCompatActivity {
     private void initColorData() {
         RadioButton radio = (RadioButton)findViewById(R.id.holo_red_light);
         mColorInt = radio.getCurrentTextColor();
-       // mColorName = radio.getText();
+        mColorName = radio.getText();
     }
 
     public void clickcolor(View view) {
         RadioButton radio = (RadioButton) view;
         mColorInt = radio.getCurrentTextColor();
-      //  mColorName = radio.getText();
+        mColorName = radio.getText();
     }
 
     public void OK(View view){
         Intent intent = new Intent();
         intent.putExtra(Bundle_Key_Color_Int,mColorInt);
-      //  intent.putExtra(Bundle_Key_Color_Name,mColorName);
+        intent.putExtra(Bundle_Key_Color_Name,mColorName);
         setResult(RESULT_OK,intent);
         finish();
     }

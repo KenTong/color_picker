@@ -15,7 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ColorPicker"></activity>
+        <activity android:name=".ColorPicker" />
+        <activity android:name=".no_1" />
+        <activity android:name=".no_2" />
+        <activity android:name=".no_3" />
+        <activity android:name=".insert_text"></activity>
     </application>
 
 </manifest>

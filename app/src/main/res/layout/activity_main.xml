@@ -9,26 +9,61 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.opro.ken.color_picker.MainActivity">
 
-    <TextView
-        android:id="@+id/colorpicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Color unpick"
-        android:layout_marginTop="120dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="28sp"
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
 
-        />
+        <TextView
+            android:id="@+id/colorpicker"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:text="Color unpick"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="28sp"
+            />
+    </ScrollView>
+
+<LinearLayout
+    android:layout_below="@+id/sv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:text="Color Select "
+        android:text="Color Select"
         android:textSize="24sp"
         android:layout_below="@+id/colorpicker"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="50dp"
         android:onClick="selectcolor"
         />
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:textSize="24sp"
+        android:layout_below="@+id/colorpicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="insert"
+        />
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="24sp"
+        android:layout_below="@+id/colorpicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="next"
+        />
+
+</LinearLayout>
 
 </RelativeLayout>
