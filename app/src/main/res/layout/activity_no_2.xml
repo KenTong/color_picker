@@ -7,43 +7,82 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.opro.ken.color_picker.no_2">
+    tools:context="com.opro.ken.color_picker.no_1">
+
     <TextView
-        android:id="@+id/no.2"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
-        android:text="2"
-        android:textSize="280sp"
+        android:id="@+id/tv_no2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:gravity="center"
+        android:text="2"
+        android:textSize="50sp"
         android:layout_centerHorizontal="true"
+
         />
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/tv_message2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv_no2"
+        android:layout_centerHorizontal="true"
+        android:text="Main傳來的資料"
+        android:textSize="25sp"
+
+        />
+
+    <RadioGroup
+
+        android:id="@+id/rg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/no.2"
-        android:layout_centerHorizontal="true">
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="150dp"
-            android:text="Back"
-            android:textSize="50sp"
-            android:onClick="back"
-            />
+        android:layout_below="@+id/tv_message2"
+        >
+
+        <RadioButton
+            android:id="@+id/NO2_ans_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/NO2_ans_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/NO2_ans_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+
+
 
     <Button
-    android:layout_width="200dp"
-    android:layout_height="70dp"
-    android:layout_centerHorizontal="true"
-    android:layout_below="@+id/no.1"
-    android:layout_marginTop="150dp"
-    android:text="Next"
-    android:textSize="50sp"
-    android:onClick="next"
-
-    />
-
-    </LinearLayout>
+        android:id="@+id/b2"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rg1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:onClick="next"
+        android:text="Next"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rg1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:onClick="next"
+        android:text="Next"
+        android:textSize="20sp"
+        />
 </RelativeLayout>
