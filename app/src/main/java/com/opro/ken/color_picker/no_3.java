@@ -1,8 +1,8 @@
 package com.opro.ken.color_picker;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.widget.RadioButton;
@@ -17,12 +17,14 @@ public class no_3 extends AppCompatActivity {
     private RadioButton no_3_radio_B;
     private RadioButton no_3_radio_C;
     private CharSequence answear;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_3);
         init();
     }
+
     private void init() {
         tv_message3 = (TextView) findViewById(R.id.tv_message3);
         tv_no3 = (TextView) findViewById(R.id.tv_no3);
@@ -36,6 +38,7 @@ public class no_3 extends AppCompatActivity {
         no_3_radio_B.setText(Html.fromHtml(getString(R.string.Question3_radio_b)));
         no_3_radio_C.setText(Html.fromHtml(getString(R.string.Question3_radio_c)));
     }
+
     public void main(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
@@ -46,6 +49,16 @@ public class no_3 extends AppCompatActivity {
     public void back(View view) {
         Intent intent = new Intent(this, no_2.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.push_left_out,R.anim.push_right_in);
+        overridePendingTransition(R.anim.push_left_out, R.anim.push_right_in);
     }
+
+    public void click(View view) {
+        answear = view.getTag().toString();
+    }
+
+    public void OK(View view) {
+        Intent intent = new Intent(this, no_3.class);
+        intent.putExtra(Q3_Answear_Key, answear);
+    }
+
 }

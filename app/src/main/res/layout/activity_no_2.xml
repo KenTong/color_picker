@@ -43,17 +43,23 @@
         <RadioButton
             android:id="@+id/NO2_ans_A"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:tag="A"/>
 
         <RadioButton
             android:id="@+id/NO2_ans_B"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:tag="B"/>
 
         <RadioButton
             android:id="@+id/NO2_ans_C"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:tag="C"/>
 
     </RadioGroup>
 

@@ -41,6 +41,7 @@ public class no_2 extends AppCompatActivity {
     }
     public void next(View view) {
         Intent intent = new Intent(this, no_3.class);
+        intent.putExtra(Q2_Answear_Key,answear);
         startActivity(intent);
         overridePendingTransition(R.anim.push_right_in, R.anim.push_left_out);
     }
@@ -48,5 +49,9 @@ public class no_2 extends AppCompatActivity {
         Intent intent = new Intent(this, no_1.class);
         startActivity(intent);
         overridePendingTransition(R.anim.push_right_in, R.anim.push_left_out);
+    }
+    public void click(View view) {
+        answear = view.getTag().toString();
+
     }
 }

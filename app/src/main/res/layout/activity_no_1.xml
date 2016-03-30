@@ -44,20 +44,28 @@
             android:id="@+id/ans_A"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="答案A"/>
+            android:text="答案A"
+            android:onClick="click"
+            android:tag="A"
+            />
 
         <RadioButton
             android:id="@+id/ans_B"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="答案B"
+            android:onClick="click"
+            android:tag="B"
             />
 
         <RadioButton
             android:id="@+id/ans_C"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="答案C"/>
+            android:text="答案C"
+            android:onClick="click"
+            android:tag="C"
+            />
 
     </RadioGroup>
 

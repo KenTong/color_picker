@@ -43,17 +43,23 @@
         <RadioButton
             android:id="@+id/NO3_ans_A"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:tag="A"/>
 
         <RadioButton
             android:id="@+id/NO3_ans_B"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:tag="B"/>
 
         <RadioButton
             android:id="@+id/NO3_ans_C"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:tag="C"/>
 
     </RadioGroup>
 
@@ -63,7 +69,6 @@
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:layout_below="@+id/rg1"
-
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:onClick="back"
@@ -80,6 +85,18 @@
         android:gravity="center"
         android:onClick="main"
         android:text="Main"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/b4"
+        android:layout_below="@+id/rg1"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:onClick="OK"
+        android:text="OK"
         android:textSize="20sp"
         />
 </RelativeLayout>
