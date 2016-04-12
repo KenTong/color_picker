@@ -22,7 +22,7 @@
 
 
     <TextView
-        android:id="@+id/tv_message3"
+        android:id="@+id/tv_message"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@id/tv_no3"
@@ -37,7 +37,7 @@
         android:id="@+id/rg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_message3"
+        android:layout_below="@+id/tv_message"
         >
 
         <RadioButton
